@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEMATYKA DZIAŁANIA</title>
+</head>
+<style> 
+    body {
+      background-image: url("https://i.pinimg.com/originals/4c/ba/b9/4cbab97eaf40a31982176951814d0c11.gif");
+      background-size: cover;
+      
+    }
+    </style>    
+<body style="font-family: 'Times New Roman', Times, serif; color:rgb(143, 10, 10); font-size: 20px; text-align: center;" >
+    <script type="text/javascript">
+    function dodawanie(a,b){
+        return a + b;
+    }
+    function odejmowanie(a,b){
+        return a - b;
+    }
+    function mnozenie(a,b){
+        return a * b;
+    }
+    function dzielenie(a,b){
+        return a / b;
+    }
+    function modulo(a,b){
+        return a % b;
+    }
+    function poleTrojkata(a,h){
+        return a * h / 2;
+    }
+    function poleTrapezu(a,b,h){
+        return (a + b) * h / 2;
+    }
+    function oblicz(form){
+    
+    a=parseFloat(form.a.value)
+    b=parseFloat(form.b.value)
+    h=parseFloat(form.h.value)
+    form.d.value=dodawanie(a,b);
+    form.o.value=odejmowanie(a,b);
+    form.m.value=mnozenie(a,b);
+    form.dz.value=dzielenie(a,b);
+    form.mod.value=modulo(a,b);
+    form.pt.value=poleTrojkata(a,h);
+    form.ptr.value=poleTrapezu(a,b,h);
+    }
+        </script>
+    
+        <form name="formularz" action="">
+        <img src="https://images.cooltext.com/5529747.png" width="1500" height="500"><br><br><br>
+        Podaj pierwszą liczbę:<br><input type="text" name="a"><br><br>
+        Podaj drugą liczbę:<br><input type="text" name="b"><br><br>
+        Podaj wysokość:<br><input type="text" name="h"><br><br>
+        <input type="button" value="oblicz" onClick="oblicz(this.form)"><br><br>
+        <b>Wyniki:<br><br></b>
+        Dodawanie:<br><input type="text" name="d" disabled><br><br>
+        Odejmowanie:<br><input type="text" name="o" disabled><br><br>
+        Mnożenie:<br><input type="text" name="m" disabled><br><br>
+        Dzielenie:<br><input type="text" name="dz" disabled><br><br>
+        Modulo:<br><input type="text" name="mod" disabled><br><br>
+        Pole Trójkąta:<br><input type="text" name="pt" disabled><br><br>
+        Pole Trapezu:<br><input type="text" name="ptr" disabled><br><br>
+    
+        <img src="https://images.cooltext.com/5529749.gif" width="1000" height="250"><br><br><br>
+        </form>
+    </html>
